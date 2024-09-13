@@ -2,7 +2,6 @@ import type { PlasmoMessaging } from "@plasmohq/messaging"
 import api from '~/api/axios.config'
 
 const DATABASE_ID = process.env.PLASMO_PUBLIC_DATABASE_ID
-console.log(DATABASE_ID, 'DATABASE_ID')
  
 const handler: PlasmoMessaging.MessageHandler = async (req, res) => {
   const { title, company, url } = req.body
