@@ -1,14 +1,16 @@
-import "~/style.css"
-import { useStorage } from "@plasmohq/storage/hook"
-import Login from "./pages/login"
-import Home from "./pages/home"
+import "~/style.css";
+import { useStorage } from "@plasmohq/storage/hook";
+import Home from "./pages/home";
+import Login from "./pages/login";
 
 function IndexPopup() {
-  const [userData] = useStorage("user_data")
-  console.log(userData)
+  const [userData] = useStorage("user_data");
+  console.log(userData);
   return (
-    <div className="min-w-[400px]">{userData?.access_token ? <Home userData={userData} /> : <Login />}</div>
-  )
+    <div className="min-w-[400px]">
+      {userData?.access_token ? <Home userData={userData} /> : <Login />}
+    </div>
+  );
 }
 
-export default IndexPopup
+export default IndexPopup;

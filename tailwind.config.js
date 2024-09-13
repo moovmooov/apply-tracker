@@ -3,5 +3,5 @@ module.exports = {
   mode: "jit",
   darkMode: "class",
   content: ["./src/**/*.{tsx,html}"],
-  plugins: []
-}
+  plugins: [],
+};
