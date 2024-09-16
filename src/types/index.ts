@@ -12,3 +12,26 @@ export interface UserData {
   workspace_name: string;
   workspace_icon: string;
 }
+
+export interface Database {
+  id: string;
+  url: string;
+}
+
+export interface PageData {
+  Company: {
+    title: { text: { content: string } }[];
+  };
+  Position: {
+    rich_text: { text: { content: string } }[];
+  };
+  Stage: {
+    status: { name: string };
+  };
+  "Posting URL": {
+    url: string;
+  };
+  "Due Date": {
+    date: { start: string };
+  };
+}

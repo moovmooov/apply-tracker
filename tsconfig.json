@@ -3,7 +3,7 @@
   "exclude": ["node_modules"],
   "include": ["./**/*.ts", "./**/*.tsx", ".plasmo/index.d.ts"],
   "compilerOptions": {
-    "types": ["firefox-webext-browser", "chrome", "node"],
+    "types": ["chrome", "node"],
     "paths": {
       "@/*": ["./src/*"],
       "~/*": ["./*"]
