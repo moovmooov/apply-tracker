@@ -5,10 +5,9 @@ import Login from "./pages/login";
 
 function IndexPopup() {
   const [userData] = useStorage("user_data");
-  console.log(userData);
   return (
     <div className="min-w-[400px]">
-      {userData?.access_token ? <Home userData={userData} /> : <Login />}
+      {userData?.access_token ? <Home /> : <Login />}
     </div>
   );
 }
